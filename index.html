@@ -1,76 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LiGHT SINDRI'S</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      svg {
+        fill: #ffffff;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-            <a href="https://light.gyws.org/index.php"><img src="IMG-20230606-WA0006.svg" alt="logo" class="logo"
-                    id="logo"></a>
-        </div>
-        <div class="upper-wrapper">
-            <nav class="upper-navbar">
-                <li><a href="https://instagram.com/light.sindri?igshid=NzZlODBkYWE4Ng=="><svg
-                            xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <style>
-                                svg {
-                                    fill: #ffffff
-                                }
-                            </style>
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                        </svg></a></li>
-                <li><a
-                        href="https://www.linkedin.com/in/light-sindri-student-run-ngo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><svg
-                            xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <style>
-                                svg {
-                                    fill: #ffffff
-                                }
-                            </style>
-                            <path
-                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                        </svg>
-
-                    </a></li>
-
-
-            </nav>
-        </div>
-        <div class="lower-wrapper">
-            <nav class="lower-navbar">
-                <!-- <ul> -->
-                <li><a href="#" class="lower-item lower-item-home" id="active">Home</a></li>
-                <li><a href="#" class="lower-item lower-item-About-us">About Us</a></li>
-                <li><a href="#" class="lower-item lower-item-Events">Events</a></li>
-                <li><a href="#" class="lower-item lower-item-Members">Members</a></li>
-                <!-- <li><a href="#">LiGHT GYWS</a></li> -->
-                <!-- </ul> -->
-            </nav>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
+        <a href="https://light.gyws.org/index.php"
+          ><img src="IMG-20230606-WA0006.svg" alt="logo" class="logo" id="logo"
+        /></a>
+      </div>
+      <div class="upper-wrapper">
+        <nav class="upper-navbar">
+          <li>
+            <a href="https://instagram.com/light.sindri?igshid=NzZlODBkYWE4Ng=="
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/light-sindri-student-run-ngo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff;
+                  }
+                </style>
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                />
+              </svg>
+            </a>
+          </li>
+        </nav>
+      </div>
+      <div class="lower-wrapper">
+        <nav class="lower-navbar">
+          <!-- <ul> -->
+          <li>
+            <a href="#" class="lower-item lower-item-home" id="active">Home</a>
+          </li>
+          <li>
+            <a href="#" class="lower-item lower-item-About-us">About Us</a>
+          </li>
+          <li><a href="#" class="lower-item lower-item-Events">Events</a></li>
+          <li><a href="#" class="lower-item lower-item-Members">Members</a></li>
+          <!-- <li><a href="#">LiGHT GYWS</a></li> -->
+          <!-- </ul> -->
+        </nav>
+      </div>
     </header>
-</body>
-
-<script>
-    function myFunction() {
+    <div class="hero-container w-full flex flex-col md:flex-row-reverse">
+      <div class="relative w-full md:w-[60%] video-container overflow-hidden">
+        <video
+          src="./assets/Snapinsta.app_video_10000000_877961370359230_98457969204972052_n.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <img
+          class="absolute w-full h-fit -bottom-1 right-0"
+          src="./assets/video-patch.png"
+          alt="frame"
+        />
+      </div>
+      <div
+        class="text-container flex w-full md:w-[40%] flex-col items-center p-6 md:p-11 justify-center md:items-start bg-[#fffef8]"
+      >
+        <h1 class="text-3xl text-center md:text-start px-6 font-bold">
+          Let's ensure <span class="text-yellow-400">happy childhoods</span> for
+          India's children
+        </h1>
+        <button
+          class="bg-[#ffd602] px-6 py-3 rounded-full text-[#231700c9] mt-6 md:mt-10 text-sm"
+        >
+          <i class="bi bi-suit-heart-fill mr-2"></i>Yes! I want to Help!
+        </button>
+      </div>
+    </div>
+    <div class="hero-img pt-6">
+      <img
+        class="w-full"
+        src="./assets/ensure-better-future-for-children-homepage.webp"
+        alt=""
+      />
+    </div>
+    <div class="message p-8 w-full flex flex-col md:flex-row">
+      <div
+        class="actual-msg flex flex-col md:w-[40%] md:mr-6 justify-center items-center"
+      >
+        <h1
+          class="msg-head text-3xl text-center py-3 md:text-start px-6 font-bold"
+        >
+          How do you want to
+          <span class="text-yellow-500">help the society</span>
+        </h1>
+        <p class="msg-body font-thin text-center py-3">
+          Your smallest contribution makes a big difference to children’s lives.
+          We count on the generosity of people like you to be able to create
+          real change for India’s children!
+        </p>
+        <div class="donation-btn">
+          <button
+            class="bg-[#ffd602] px-6 py-3 rounded-full text-[#231700c9] mt-6 md:mt-10 text-sm"
+          >
+            <i class="bi bi-suit-heart-fill mr-2"></i>Donate for Society Welfare
+          </button>
+        </div>
+      </div>
+      <div class="slider-container w-full h-[500px] md:w-[60%] relative">
+        <div
+          class="slide-change-btn text-blue-300 flex flex-row w-full h-full absolute justify-between items-center"
+        >
+          <div class="slide-change-prev text-2xl z-10">
+            <i
+              class="shadow-sm bi bg-white text-blue-300 rounded-full bi-arrow-left-circle-fill"
+            ></i>
+          </div>
+          <div class="slide-change-next text-2xl z-10">
+            <i
+              class="shadow-sm bi bg-white text-blue-300 rounded-full bi-arrow-right-circle-fill"
+            ></i>
+          </div>
+        </div>
+        <div class="relative w-full h-full overflow-x-scroll">
+          <div
+            class="slider-main flex w-[300px] group absolute flex-col justify-center top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 items-center"
+          >
+            <img
+              src="https://picsum.photos/id/238/600/400"
+              class="rounded-t-md"
+              alt=""
+            />
+            <div
+              class="slider-txt flex flex-col justify-start h-24 border-b-4 border-yellow-500 duration-150 w-full group-hover:border-b-8 rounded-b-md items-center"
+            >
+              <h1 class="text-yellow-500 font-bold">
+                BRIDGE THE EDUCATION GAP
+              </h1>
+              <h1 class="font-bold">If not now they might never return</h1>
+            </div>
+          </div>
+          <div
+            class="slider-main flex w-[300px] group absolute flex-col justify-center top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 items-center"
+          >
+            <img
+              src="https://picsum.photos/id/238/600/400"
+              class="rounded-t-md"
+              alt=""
+            />
+            <div
+              class="slider-txt flex flex-col justify-start h-24 border-b-4 border-yellow-500 duration-150 w-full group-hover:border-b-8 rounded-b-md items-center"
+            >
+              <h1 class="text-yellow-500 font-bold">
+                BRIDGE THE EDUCATION GAP
+              </h1>
+              <h1 class="font-bold">If not now they might never return</h1>
+            </div>
+          </div>
+          <div
+            class="slider-main flex w-[300px] group absolute flex-col justify-center top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 items-center"
+          >
+            <img
+              src="https://picsum.photos/id/238/600/400"
+              class="rounded-t-md"
+              alt=""
+            />
+            <div
+              class="slider-txt flex flex-col justify-start h-24 border-b-4 border-yellow-500 duration-150 w-full group-hover:border-b-8 rounded-b-md items-center"
+            >
+              <h1 class="text-yellow-500 font-bold">
+                BRIDGE THE EDUCATION GAP
+              </h1>
+              <h1 class="font-bold">If not now they might never return</h1>
+            </div>
+          </div>
+          <div
+            class="slider-main flex w-[300px] group absolute flex-col justify-center top-1/2 left-[50%] -translate-x-1/2 -translate-y-1/2 items-center"
+          >
+            <img
+              src="https://picsum.photos/id/238/600/400"
+              class="rounded-t-md"
+              alt=""
+            />
+            <div
+              class="slider-txt flex flex-col justify-start h-24 border-b-4 border-yellow-500 duration-150 w-full group-hover:border-b-8 rounded-b-md items-center"
+            >
+              <h1 class="text-yellow-500 font-bold">
+                BRIDGE THE EDUCATION GAP
+              </h1>
+              <h1 class="font-bold">If not now they might never return</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="domain-container"></div>
+    <script>
+      let prev = document.querySelector(".slide-change-prev");
+      let next = document.querySelector(".slide-change-next");
+      let sliders = document.querySelectorAll(".slider-main");
+      sliders.forEach((elem, index) => {
+        elem.classList.add(`left-[${50 * index + 50}%]`);
+        console.log(index);
+      });
+      prev.addEventListener("click", () => {});
+      next.addEventListener("click", () => {});
+      function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "menu-btn") {
-            x.className += " responsive";
+          x.className += " responsive";
         } else {
-            x.className = "menu-btn";
+          x.className = "menu-btn";
         }
-    }
-</script>
-
+      }
+    </script>
+  </body>
 </html>

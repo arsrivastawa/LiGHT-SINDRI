@@ -20,8 +20,8 @@
         <div class="topnav" id="myTopnav">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
-            <a href="https://light.gyws.org/index.php"><img src="./assets/IMG-20230606-WA0006.svg" alt="logo" class="logo"
-                    id="logo"></a>
+            <a href="https://light.gyws.org/index.php"><img src="./assets/IMG-20230606-WA0006.svg" alt="logo"
+                    class="logo" id="logo"></a>
         </div>
         <div class="upper-wrapper">
             <nav class="upper-navbar">
@@ -78,70 +78,66 @@
     </div>
 
     <div class='members-wrapper'>
-        <div class="infiniteslides" >
+        <div class="infiniteslides">
 
             <div class="members-portrait-column" data-style="infiniteslide170195689206048">
+                <marquee behavior="-translate-x-1" direction="-translate-x-1">
 
-                <div class="members-portrait-block">
-                    <div class="member-media"><img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-1.jpg"
-                            class="members-portrait-img" src="./assets/volunteer-1.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media"><img decoding="async" alt="members-image"
+                                data-src="./assets/volunteer-1.jpg" class="members-portrait-img"
+                                src="./assets/volunteer-1.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media">
-                        <img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-2.jpg"
-                            class="members-portrait-img" src="./assets/volunteer-2.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media">
+                            <img decoding="async" alt="members-image" data-src="./assets/volunteer-2.jpg"
+                                class="members-portrait-img" src="./assets/volunteer-2.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media"><img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-1.jpg"
-                            class="members-portrait-img"
-                            src="./assets/volunteer-1.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media"><img decoding="async" alt="members-image"
+                                data-src="./assets/volunteer-1.jpg" class="members-portrait-img"
+                                src="./assets/volunteer-1.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media"><img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-2.jpg"
-                            class="members-portrait-img"
-                            src="./assets/volunteer-2.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media"><img decoding="async" alt="members-image"
+                                data-src="./assets/volunteer-2.jpg" class="members-portrait-img"
+                                src="./assets/volunteer-2.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media"><img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-1.jpg"
-                            class="members-portrait-img"
-                            src="./assets/volunteer-1.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media"><img decoding="async" alt="members-image"
+                                data-src="./assets/volunteer-1.jpg" class="members-portrait-img"
+                                src="./assets/volunteer-1.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media">
-                        <img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-2.jpg" class="members-portrait-img"
-                            src="./assets/volunteer-2.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media">
+                            <img decoding="async" alt="members-image" data-src="./assets/volunteer-2.jpg"
+                                class="members-portrait-img" src="./assets/volunteer-2.jpg" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="members-portrait-block">
-                    <div class="member-media">
-                        <img decoding="async" alt="members-image"
-                            data-src="./assets/volunteer-1.jpg" class="members-portrait-img"
-                            src="./assets/volunteer-1.jpg" />
+                    <div class="members-portrait-block">
+                        <div class="member-media">
+                            <img decoding="async" alt="members-image" data-src="./assets/volunteer-1.jpg"
+                                class="members-portrait-img" src="./assets/volunteer-1.jpg" />
+                        </div>
                     </div>
-                </div>
+                </marquee>
             </div>
         </div>
     </div>
     <p>
         <img src="./assets/crayon-strip-bottom.jpg" alt="back" class="back-upper-crayon">
-        <img src="crayon-strip-bottom.jpg" alt="back" class="back-lower-crayon">
+        <img src="./assets/crayon-strip-bottom.jpg" alt="back" class="back-lower-crayon">
     </p>
 
     <div id="Why-Join-LiGHT">
@@ -163,22 +159,23 @@
     </div>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const slideshowContainer = document.querySelector(".slideshow-container");
-    const slides = document.querySelectorAll(".slide");
+    document.addEventListener("DOMContentLoaded", function () {
+        const slideshowContainer = document.querySelector(".slideshow-container");
+        const slides = document.querySelectorAll(".slide");
 
-    let currentIndex = 0;
+        let currentIndex = 0;
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlidePosition();
-    }
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlidePosition();
+        }
 
-    function updateSlidePosition() {
-        const newPosition = -currentIndex * 100 + "vw";
-        slideshowContainer.style.transform = "translateX(" + newPosition + ")";
-    }
-    setInterval(nextSlide, 5000);
-});
+        function updateSlidePosition() {
+            const newPosition = -currentIndex * 100 + "vw";
+            slideshowContainer.style.transform = "translateX(" + newPosition + ")";
+        }
+        setInterval(nextSlide, 5000);
+    });
 </script>
+
 </html>

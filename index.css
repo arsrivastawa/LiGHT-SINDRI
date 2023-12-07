@@ -4,7 +4,6 @@
     color: #000000;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 600px) {
@@ -24,6 +23,19 @@
         display: left;
         position: absolute;
         /* size: 20px; */
+    }
+
+    #logo {
+        background-color: #fdd831;
+        position: absolute;
+        top: -0.5rem;
+        z-index: 2;
+        left: 2.8rem;
+        width: 4.5rem;
+        height: 98px;
+        padding: 0.50rem 0.50rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 
     .icon {
@@ -53,12 +65,13 @@
         display: block;
         text-align: left;
     }
-    #logo{
+
+    #logo {
         left: 3rem;
         height: 45px;
         width: 2.5rem;
     }
-    
+
 
 }
 
@@ -121,7 +134,7 @@ li {
     display: flex;
     height: 54px;
     justify-content: start;
-    
+
 }
 
 .lower-navbar li {
@@ -133,11 +146,11 @@ li {
 
 .lower-navbar li a::after,
 .lower-navbar li a:hover,
-a:active{
+a:active {
     content: "";
     position: relative;
     border-bottom: 3px solid #fdd831;
-    
+
 }
 
 /* bottom: 5rem; */
@@ -147,13 +160,13 @@ a:active{
 .lower-navbar li a:hover {
     color: rgb(0, 0, 0);
     opacity: 1;
-    
+
 }
 
 .upper-navbar li a svg {
     padding-top: 4px;
     padding-right: 9px;
-    
+
 }
 
 .search-box {
@@ -161,7 +174,7 @@ a:active{
     border-radius: 4px;
     border-color: #7f797960;
     width: 9rem;
-    
+
 }
 
 .search-box::placeholder {
@@ -176,6 +189,120 @@ a:active{
 /* a:visited{
     color: coral;
 } */
-.icon{
-    display: none ;
+.icon {
+    display: none;
+}
+
+.page-head {
+    width: 40%;
+    padding-top: 11rem;
+    display: block;
+    text-align: center;
+    padding: 4rem 0 1.25rem;
+    margin: auto;
+}
+
+.head-title {
+
+    display: inline-block;
+    border-bottom: 2px solid #fdd831;
+    padding: 0 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+span {
+    font: inherit;
+}
+
+.members-wrapper {
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.infiniteslides{
+    overflow: hidden;
+}
+.members-portrait-column {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    animation: 44.1s linear 0s infinite normal none running infiniteslide1701956892060485;
+
+}
+@keyframes infiniteslide170195689206048{
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-1764px,0,0);
+    }
+}
+
+.members-portrait-block {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    box-shadow: 0 1rem 0.8rem 0.1rem rgba(117, 100, 15, .2);
+    margin: 0 1rem 2rem;
+    width: calc(20% - 2.25rem);
+
+    flex: 0 0 auto;
+}
+
+.member-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.members-portrait-img {
+    display: block;
+    width: 100%;
+}
+
+#Why-Join-LiGHT{
+    position: relative;
+    margin-top: 50pxpx;
+    z-index: 5;
+}
+
+.para-head{
+    text-align: left;
+    position: relative;
+    /* float: left; */
+    margin: 11rem 5rem 0 10rem;
+    z-index: 11;
+}
+
+
+.back-upper-crayon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.back-lower-crayon {
+    position: absolute;
+    z-index: 1;
+    top: 99%;
+    left: 0;
+    width: 100%;
+}
+
+#Why-Join-LiGHT {
+    display: inline-block;
+}
+
+.para {
+    position: relative;
+    display: inline-block;
+}
+
+.para-head {
+    font-weight: bolder;
 }

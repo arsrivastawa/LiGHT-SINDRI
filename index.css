@@ -1,23 +1,13 @@
 * {
     font-family: sans-serif;
     /* font-style: italic; */
-    color: #000000;
+    /* color: #000000;  */
     padding: 0;
     margin: 0;
 }
 
 @media screen and (max-width: 600px) {
-    /* .topnav a {
-        /* display: block; */
-    /* float: right; */
-    /* display: block; */
-    /* }  */
-
-
-    /* .topnav a:not(:first-child) {
-        display: none;
-    } */
-
+    
     .topnav a.icon {
         float: inline-start;
         display: left;
@@ -193,116 +183,80 @@ a:active {
     display: none;
 }
 
-.page-head {
-    width: 40%;
-    padding-top: 11rem;
-    display: block;
+.year-head{
+    display: flexbox;
     text-align: center;
-    padding: 4rem 0 1.25rem;
-    margin: auto;
-}
-
-.head-title {
-
-    display: inline-block;
-    border-bottom: 2px solid #fdd831;
-    padding: 0 0.5rem 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
-
-span {
-    font: inherit;
-}
-
-.members-wrapper {
-    position: relative;
-    z-index: 10;
-    overflow-x: hidden;
-    white-space: nowrap;
-}
-.infiniteslides{
-    overflow: hidden;
-}
-.members-portrait-column {
-    display: flex;
-    flex-flow: row;
+    margin-top: 22px;
     align-items: center;
-    animation: 44.1s linear 0s infinite normal none running infiniteslide1701956892060485;
-
-}
-@keyframes infiniteslide170195689206048{
-    0% {
-        transform: translate3d(0,0,0);
-    }
-    100% {
-        transform: translate3d(-1764px,0,0);
-    }
+    color: #000000;
 }
 
-.members-portrait-block {
+.member-card {
+    margin: 20px;
+    text-align: center;
     position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    vertical-align: middle;
-    box-shadow: 0 1rem 0.8rem 0.1rem rgba(117, 100, 15, .2);
-    margin: 0 1rem 2rem;
-    width: calc(20% - 2.25rem);
-
-    flex: 0 0 auto;
+    flex-basis: calc(20% - 40px);
+}
+.member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.member-media {
+.member-card {
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
     position: relative;
-    overflow: hidden;
+    cursor: pointer;
 }
 
-.members-portrait-img {
-    display: block;
+.member-photo {
     width: 100%;
-}
-
-#Why-Join-LiGHT{
+    height: 100%;
+    /* border-radius: 50%;
+    overflow: hidden; */
     position: relative;
-    margin-top: 50pxpx;
-    z-index: 5;
 }
 
-.para-head{
-    text-align: left;
-    position: relative;
-    /* float: left; */
-    margin: 11rem 5rem 0 10rem;
-    z-index: 11;
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.back-upper-crayon {
+.social-icons {
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    transform: rotate(180deg);
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.back-lower-crayon {
+.member-card:hover .social-icons {
+    opacity: 1;
+}
+
+.member-card:hover, .member-card.active {
+    transform: scale(1.1);
+}
+.social-icons a {
+    margin: 0 10px;
+}
+
+.member-details {
     position: absolute;
-    z-index: 1;
-    top: 99%;
-    left: 0;
-    width: 100%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #f2ff00 !important;
+    z-index: 2; /* Ensure it's above the inclined surface */
 }
-
-#Why-Join-LiGHT {
-    display: inline-block;
-}
-
-.para {
-    position: relative;
-    display: inline-block;
-}
-
-.para-head {
-    font-weight: bolder;
+.member-card:hover .member-details {
+    opacity: 1;
 }

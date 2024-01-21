@@ -9,6 +9,16 @@
 .icon {
   display: none;
 }
+.members{
+  /* background-color: #f4f5ff; */
+  /* background-color: #f4f5ff; */
+  /* background-color: #dcd8cf; */
+  /* background-color: #f0f0f0; */
+  /* background-color: #b3d7ea; */
+  background-color: #e7dcd6;
+  /* background-color: #d4dffe; */
+  /* background-color: #ddd0c8; */
+}
 
 .year-head {
   display: flexbox;
@@ -37,6 +47,7 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .member-photo {
@@ -57,7 +68,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: 0;
   right: 0;
   opacity: 0;
@@ -90,4 +101,29 @@
 }
 h1 {
   color: #000000;
+  font-size: xx-large !important;
+  font-weight: 600 !important;
 }
+
+@media (max-width: 480px) {
+  .member-card {
+    text-align: center;
+    position: relative;
+    flex-basis: calc(50% - 40px);
+    /* flex-basis: calc(100% - 100px); */
+    transition: 150ms;
+  }
+  h3{
+    font-size: small;
+  }
+  .social-icons {
+    bottom: 2px;
+  }
+}
+/* @media (max-width: 768px) {
+  .member-card {
+    text-align: center;
+    position: relative;
+    transition: 150ms;
+  }
+} */

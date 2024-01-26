@@ -6,120 +6,113 @@
   margin: 0;
 }
 
-.icon {
+/* .icon {
   display: none;
-}
-.members{
+} */
+body{
   /* background-color: #f4f5ff; */
-  /* background-color: #f4f5ff; */
+  background-color: #f4f5ff;
   /* background-color: #dcd8cf; */
   /* background-color: #f0f0f0; */
   /* background-color: #b3d7ea; */
-  background-color: #e7dcd6;
+  /* background-color: #e7dcd6; */
   /* background-color: #d4dffe; */
   /* background-color: #ddd0c8; */
 }
-
-.year-head {
-  display: flexbox;
-  text-align: center;
-  margin-top: 22px;
-  align-items: center;
-  color: #000000;
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.member-card {
-  margin: 20px;
-  text-align: center;
-  position: relative;
-  flex-basis: calc(20% - 40px);
-  transition: 150ms;
-}
-.member-container {
+#members-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .member-card {
-  margin: 20px;
-  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(148, 66, 66, 0.478);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  height: 25%;
+  text-align: center;
   position: relative;
-  cursor: pointer;
-  border-radius: 20px;
+  margin-bottom: 1.5em;
 }
 
-.member-photo {
-  width: 100%;
-  height: 100%;
-  /* border-radius: 50%;
-    overflow: hidden; */
-  position: relative;
+.member-card:hover {
+  transform: scale(1.05);
 }
 
-.member-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  right: 0;
+.member-card .social-icons {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .member-card:hover .social-icons {
   opacity: 1;
 }
 
-.member-card:hover,
-.member-card.active {
-  transform: scale(1.1);
-}
-.social-icons a {
-  margin: 0 10px;
+.member-image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1em;
 }
 
 .member-details {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  color: #f2ff00 !important;
-  z-index: 2; /* Ensure it's above the inclined surface */
-}
-.member-card:hover .member-details {
-  opacity: 1;
-}
-h1 {
-  color: #000000;
-  font-size: xx-large !important;
-  font-weight: 600 !important;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
+.member-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.member-role {
+  color: #555;
+  margin-bottom: 0.5em;
+}
+
+.social-icons {
+  margin-top: 0.5em;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.founding-members-title,
+.cc-members-title,
+.head-members-title,
+.ctm-members-title,
+.am-members-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
   .member-card {
-    text-align: center;
-    position: relative;
-    flex-basis: calc(50% - 40px);
-    /* flex-basis: calc(100% - 100px); */
-    transition: 150ms;
-  }
-  h3{
-    font-size: small;
-  }
-  .social-icons {
-    bottom: 2px;
+    width: 100%;
   }
 }
+
 /* @media (max-width: 768px) {
   .member-card {
     text-align: center;
